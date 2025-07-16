@@ -1,0 +1,29 @@
+/* Tema Default */
+.custom-default {
+    --bg-color: #252525;
+    --text-color: #ffff;
+    --custom-dark: #1E1E1E;
+    --custom-light-dark: #252525;
+  }
+  
+  /* Tema Light Blue */
+  .custom-light-blue {
+    --bg-color: #e3f2fd;
+    --text-color: #0d47a1;
+    --custom-dark: #bbdefb;
+    --custom-light-dark: #90caf9;
+  }
+  
+  /* Terapkan variabel CSS ke elemen */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  .bg-custom-dark {
+    background-color: var(--custom-dark);
+  }
+  
+  .bg-custom-light-dark {
+    background-color: var(--custom-light-dark);
+  }

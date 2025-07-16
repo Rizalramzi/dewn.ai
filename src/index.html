@@ -3,156 +3,161 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
+  <link href="css/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="icon" href="assets/logo-only.svg">
+  <title>dewn.ai | Home</title>
 </head>
-<body class="bg-light-dark">
+<body class="">
     <script>
         AOS.init();
       </script>
 
-    <nav class="mx-[2rem] mt-[1.5rem] flex justify-between items-center">
-        <div class="flex items-center">
-            <img src="assets/logo.svg" alt="" width="110">
-            <div class="ms-[8rem]">
-                <ul class="flex gap-5 text-white">
-                    <a href=""><li>Features</li></a>
-                    <a href=""><li>App & Integration</li></a>
-                    <a href=""><li>Pricing</li></a>
-                    <a href=""><li>FAQ</li></a>
-                </ul>
-            </div>
+      <nav class="flex px-14 py-4 justify-between">
+        <div class="flex space-x-16 ">
+          <img src="assets/icons/logo.svg" alt="" class="w-32 h-auto">
+          <ul class="text-sm flex items-center space-x-6 pt-4">
+            <li>Features</li>
+            <li>App & Integration</li>
+            <li>Pricing</li>
+            <li>FAQ</li>
+          </ul>
         </div>
-        
-        <div class="">
-            <a href="" class="px-8 py-4 border border-dark-main text-dark-main rounded-lg hover:text-white hover:bg-dark-main ease-in-out duration-300">Try Demo</a>
-            <a href="" class="px-8 py-4 text-white rounded-lg bg-dark-main ease-in-out duration-300 ms-[1rem] hover:bg-main">Register</a>
+        <div class="flex items-center mt-3 space-x-4">
+          <button class="px-8 py-3 text-dark-main border-dark-main border rounded-tl-lg rounded-br-lg rounded-bl-2xl rounded-tr-2xl"><a href="chat.html">Try Demo</a></button>
+          <button class="px-8 py-3 text-white bg-dark-main rounded-tl-lg rounded-br-lg rounded-bl-2xl rounded-tr-2xl">Register</button>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <div class="w-full mt-20 text-center relative">
-        <div class="px-[200px] py-[180px] top-[100px] absolute bg-dark-main blur-[150px]"></div>
-        <div class="px-[200px] py-[180px] top-[100px] right-0 absolute bg-dark-main blur-[150px]"></div>
-        <h1 class="text-white text-center text-5xl font-semibold" data-aos="fade-up" data-aos-duration="1000">
-            Providing <span class="text-dark-main">information</span> from all around <br>the World!
-        </h1>
-        <p class="text-white mt-[2rem]" data-aos="fade-up" data-aos-duration="1400"><span class="text-dark-main">dewn.ai</span> dishes out info from <span class="text-dark-main">all over the globe.</span> <br>Need answers, tips, or the latest scoop? It's got you covered!</p>
-        <div class="flex justify-center mt-8">
-            <img src="assets/image-1.svg" class="" alt="" width="900" data-aos="fade-up" data-aos-duration="1800">
-        </div>
-    </div>
-    <!-- End Hero -->
-
-    <!-- Features -->
-    <div class="w-full flex mt-[10rem] items-center justify-between relative">
-        <img src="assets/pattern.svg" alt="" class="absolute" width="300">
-        <img src="assets/pattern.svg" alt="" class="absolute right-0" width="400">
-        <div class="flex-1 ms-[4rem]"> <!-- Menambahkan padding horizontal pada div ini -->
-            <h1 class="font-bold text-white text-4xl" data-aos="fade-up" data-aos-duration="1000">We got a fresh new <br><span class="text-dark-main" >features</span> in da house!</h1>
-        </div>
-        <div class="me-[4rem]"> <!-- Menambahkan padding horizontal pada div ini -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 py-6">
-                <div class="bg-dark-main text-white p-6 rounded-lg flex items-center space-x-4" data-aos="fade-up" data-aos-duration="1000">
-                    <div>
-                        <img src="assets/theme.svg" alt="" width="40">
+    <main class="flex flex-col items-center justify-center">
+        <div class="container max-w-[90rem] ">
+            <!-- Hero -->
+                <section class="w-full flex flex-col items-center justify-center mt-24 relative">
+                    <div class="flex flex-col items-center justify-center z-50">
+                        <h1 class="text-5xl font-semibold max-w-[55rem] text-center">Providing <span class="text-dark-main">information</span> from all around the World!</h1>
+                        <p class="max-w-96 text-sm text-center font-normal mt-6"><span class="text-dark-main font-semibold ">dewn.ai</span> dishes out info from <span class="text-dark-main font-semibold">all over the globe.</span> Need answers, tips, or the latest scoop? It's got you covered!</p>
+                        <img src="assets/photos/image-1.svg" alt="" class="w-[65rem] me-12 h-auto mt-16">
                     </div>
-                    <div>
-                        <h3 class="font-semibold text-sm">Customizable Theme</h3>
+                    <div class="w-full flex items-center justify-between absolute z-0">
+                        <div class="bg-dark-main w-96 h-[40rem] blur-[200px] rounded-full"></div>
+                        <div class="bg-dark-main w-96 h-[40rem] blur-[200px] rounded-full"></div>
                     </div>
-                </div>
-                <div class="bg-dark-main text-white p-6 rounded-lg flex items-center space-x-4" data-aos="fade-up" data-aos-duration="1300">
-                    <div>
-                        <img src="assets/voice.svg" alt="" width="40">
-                    </div>
-                    <div>
-                        <h3 class="font-semibold text-sm">Voice Interactions</h3>
-                    </div>
-                </div>
-                <div class="bg-dark-main text-white p-6 rounded-lg flex items-center space-x-4" data-aos="fade-up" data-aos-duration="1600">
-                    <div>
-                        <img src="assets/image.svg" alt="" width="40">
-                    </div>
-                    <div>
-                        <h3 class="font-semibold text-sm">Image Recognition</h3>
-                    </div>
-                </div>
-                <div class="bg-dark-main text-white p-6 rounded-lg flex items-center space-x-4" data-aos="fade-up" data-aos-duration="1900">
-                    <div>
-                        <img src="assets/language.svg" alt="" width="40">
-                    </div>
-                    <div>
-                        <h3 class="font-semibold text-sm">Multi-Language</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Features -->
-
-    <!-- First Peek -->
-     
-    <div class="w-full relative mt-[10rem] flex">
-        <img src="assets/pattern.svg" alt="" class="absolute right-0 w-[600px] h-[300px]">
-        <div class="w-1/2 relative">
-            <div class="px-[200px] py-[1px] top-[100px] left-[120px] bg-dark-main absolute" data-aos="fade-up" data-aos-duration="2000"></div>
-        </div>
-        <div class="w-1/2">
-            <h1 class="text-white font-bold text-4xl text-right me-[10rem]" data-aos="fade-up" data-aos-duration="1500"><span class="text-dark-main">first peek</span> at the chat <br>page</h1>
-        </div>
-    </div>
-    <div class="w-full mt-[6rem] relative">
-        <div class="block justify-center mt-8 relative">
-            <div class="px-[250px] py-[200px] bg-dark-main absolute top-[130px] right-[660px] rounded-lg" data-aos="fade-up" data-aos-duration="1600"></div>
-            <img src="assets/image-2.svg" class="" alt="" width="1200" data-aos="fade-up" data-aos-duration="2000">
-            <h1 class="font-regular text-[30px] text-end text-white mt-[-220px] pr-[4rem]">Your first sneak peek at the chat<br> page, like checking out its vibe<br> when you first hop on.</h1>
-        </div>
-        <div>
-            
-        </div>
-    </div>
-    <!-- End First Peek -->
-
-    <!-- Ditch Background -->
-    <div class="w-full relative mt-[15rem] flex">
-        <div class="px-[200px] py-[180px] top-[100px] absolute bg-dark-main blur-[400px]"></div>
-        <div class="w-1/2">
-            <h1 class="text-white font-bold text-4xl text-left mx-[3rem]" data-aos="fade-up" data-aos-duration="1000">Wanna ditch the background pic? No problem!</h1>
-        </div>
-        <div class="w-1/2 relative">
-            <div class="px-[200px] py-[1px] top-[100px] left-[120px] bg-dark-main absolute" data-aos="fade-up" data-aos-duration="2000"></div>
-        </div>
-    </div>
-    <div class="w-full mt-[7rem] flex">
-        <div class="w-1/2">
-            <div class="px-[120px] rounded-r-lg py-[140px] bg-dark absolute" data-aos="fade-up" data-aos-duration="1000"></div>
-            <h1 class="font-regular text-white ps-[6rem] pe-[12rem] text-[20px] pt-[3rem]" data-aos="fade-up" data-aos-duration="1000"> Just snap a pic and watch that background vanish – no fancy editing tools required.</h1>
-        </div>
-        <div class="w-1/2 relative">
-            <div class="px-[200px] py-[150px] bg-dark-main absolute rounded-lg top-[120px] left-[120px]" data-aos="fade-up" data-aos-duration="1600"></div>
-            
-            <img src="assets/image-3.svg" alt="" class="pe-[3rem]" width="500" data-aos="fade-up" data-aos-duration="1000">
-            <img src="assets/logo-white.svg" alt="" class="absolute left-[300px] bottom-[-50px]" width="150">
-        </div>
-    </div>
-    <!-- End Ditch Background -->
-
-    <!-- Contact -->
-    <div class="w-full py-[5rem] bg-dark mt-[20rem]">
-        <img src="assets/pattern.svg" alt="" class="absolute w-[300px] right-0" data-aos="fade-up" data-aos-duration="1200">
-        <h1 class="text-2xl text-white text-center font-semibold" data-aos="fade-up" data-aos-duration="1000">Wanna drop some thoughts on <span class="text-dark-main">dewn.ai?</span></h1>
-        <h1 class="text-lg mt-[1rem] text-white text-center font-semibold" data-aos="fade-up" data-aos-duration="1400">Hit us up at <span class="text-dark-main">dewnai@gmail.com!</span></h1>
-        <img src="assets/pattern.svg" alt="" class="absolute w-[300px]" data-aos="fade-up" data-aos-duration="1100">
+                </section>
+            <!-- End Hero -->
         
-    </div>
-    <!-- End Contact -->
 
+            <!-- Features -->
+            <section class="w-full flex mt-[10rem] items-center justify-between relative">
+                <img src="assets/icons/pattern.svg" alt="" class="absolute" width="300">
+                <img src="assets/icons/pattern.svg" alt="" class="absolute right-0" width="400">
+                <div class="flex-1 ms-[4rem]"> <!-- Menambahkan padding horizontal pada div ini -->
+                    <h1 class="font-bold text-white text-4xl" data-aos="fade-up" data-aos-duration="1000">We got a fresh new <br><span class="text-dark-main" >features</span> in da house!</h1>
+                </div>
+                <div class="me-[4rem]"> <!-- Menambahkan padding horizontal pada div ini -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 py-6">
+                        <div class="bg-dark-main text-white p-6 rounded-lg flex items-center space-x-4" data-aos="fade-up" data-aos-duration="1000">
+                            <div>
+                                <img src="assets/icons/theme-white.svg" alt="" width="40">
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-sm">Customizable Theme</h3>
+                            </div>
+                        </div>
+                        <div class="bg-dark-main text-white p-6 rounded-lg flex items-center space-x-4" data-aos="fade-up" data-aos-duration="1300">
+                            <div>
+                                <img src="assets/icons/voice.svg" alt="" width="40">
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-sm">Voice Interactions</h3>
+                            </div>
+                        </div>
+                        <div class="bg-dark-main text-white p-6 rounded-lg flex items-center space-x-4" data-aos="fade-up" data-aos-duration="1600">
+                            <div>
+                                <img src="assets/photos/image.svg" alt="" width="40">
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-sm">Image Recognition</h3>
+                            </div>
+                        </div>
+                        <div class="bg-dark-main text-white p-6 rounded-lg flex items-center space-x-4" data-aos="fade-up" data-aos-duration="1900">
+                            <div>
+                                <img src="assets/icons/language.svg" alt="" width="40">
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-sm">Multi-Language</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Features -->
+
+            <!-- First Peek -->
+            
+            <section class="w-full relative mt-[10rem] flex">
+                <img src="assets/icons/pattern.svg" alt="" class="absolute right-0 w-[600px] h-[300px]">
+                <div class="w-1/2 relative">
+                    <div class="px-[200px] py-[1px] top-[100px] left-[120px] bg-dark-main absolute" data-aos="fade-up" data-aos-duration="2000"></div>
+                </div>
+                <div class="w-1/2">
+                    <h1 class="text-white font-bold text-4xl text-right me-[10rem]" data-aos="fade-up" data-aos-duration="1500"><span class="text-dark-main">first peek</span> at the chat <br>page</h1>
+                </div>
+            </section>
+            <section class="w-full mt-[6rem] relative">
+                <div class="block justify-center mt-8 relative">
+                    <div class="px-[250px] py-[200px] bg-dark-main absolute top-[130px] right-[660px] rounded-lg" data-aos="fade-up" data-aos-duration="1600"></div>
+                    <img src="assets/photos/image-2.svg" class="ps-12" alt="" width="1000" data-aos="fade-up" data-aos-duration="2000">
+                    <h1 class="font-regular text-[30px] text-end text-white mt-[-220px] pr-[4rem]">Your first sneak peek at the chat<br> page, like checking out its vibe<br> when you first hop on.</h1>
+                </div>
+                <div>
+                    
+                </div>
+            </section>
+            <!-- End First Peek -->
+
+            <!-- Ditch Background -->
+            <section class="w-full relative mt-[15rem] flex">
+                <div class="px-[200px] py-[180px] top-[100px] absolute bg-dark-main blur-[400px]"></div>
+                <div class="w-1/2">
+                    <h1 class="text-white font-bold text-4xl text-left mx-[3rem]" data-aos="fade-up" data-aos-duration="1000">Wanna ditch the background pic? No problem!</h1>
+                </div>
+                <div class="w-1/2 relative">
+                    <div class="px-[200px] py-[1px] top-[100px] left-[120px] bg-dark-main absolute" data-aos="fade-up" data-aos-duration="2000"></div>
+                </div>
+            </section>
+            <section class="w-full mt-[7rem] flex">
+                <div class="w-1/2">
+                    <div class="px-[120px] rounded-r-lg py-[140px] bg-dark absolute" data-aos="fade-up" data-aos-duration="1000"></div>
+                    <h1 class="font-regular text-white ps-[6rem] pe-[12rem] text-[20px] pt-[3rem]" data-aos="fade-up" data-aos-duration="1000"> Just snap a pic and watch that background vanish – no fancy editing tools required.</h1>
+                </div>
+                <div class="w-1/2 relative">
+                    <div class="px-[200px] py-[150px] bg-dark-main absolute rounded-lg top-[120px] left-[120px]" data-aos="fade-up" data-aos-duration="1600"></div>
+                    
+                    <img src="assets/photos/image-3.svg" alt="" class="pe-[3rem]" width="500" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="assets/icons/logo-white.svg" alt="" class="absolute left-[300px] bottom-[-50px]" width="150">
+                </div>
+            </section>
+            <!-- End Ditch Background -->
+
+            <!-- Contact -->
+            <section class="w-full py-[5rem] bg-dark mt-[20rem]">
+                <img src="assets/icons/pattern.svg" alt="" class="absolute w-[300px] right-0" data-aos="fade-up" data-aos-duration="1200">
+                <h1 class="text-2xl text-white text-center font-semibold" data-aos="fade-up" data-aos-duration="1000">Wanna drop some thoughts on <span class="text-dark-main">dewn.ai?</span></h1>
+                <h1 class="text-lg mt-[1rem] text-white text-center font-semibold" data-aos="fade-up" data-aos-duration="1400">Hit us up at <span class="text-dark-main">dewnai@gmail.com!</span></h1>
+                <img src="assets/icons/pattern.svg" alt="" class="absolute w-[300px]" data-aos="fade-up" data-aos-duration="1100">
+                
+            </section>
+            <!-- End Contact -->
+        </div>
+    </main>
     <!-- Footer -->
     <footer class="mt-[20rem] bg-dark pb-[6rem] pt-[4rem] rounded-t-3xl">
         <div class="w-full flex px-[4rem] justify-between">
             <div class="">
-                <img src="assets/logo-white.svg" alt="" data-aos="fade-up" data-aos-duration="1200">
+                <img src="assets/icons/logo-white.svg" alt="" data-aos="fade-up" data-aos-duration="1200">
             </div>
             <div class="grid grid-cols-3 gap-10">
                 <div class=" text-white grid gap-4">
